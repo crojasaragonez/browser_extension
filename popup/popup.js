@@ -1,11 +1,11 @@
-document.addEventListener("click", (e) => {
-  if (e.target.classList.contains("list-group-item")) {
-    var url = e.target.getAttribute("url");
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('list-group-item')) {
+    var url = e.target.getAttribute('url');
 
-    chrome.tabs.create({ url: url }).then((tab) => {
-      console.log('new tab created');
-    }, (error) => {
-      console.log(`Error: ${error}`);
+    //cross browser hack
+    browser = window.msBrowser || window.browser || window.chrome;
+    browser.tabs.create({ url: url }).then((tab) => {
+      console.log('Tab was opened');
     });
     window.close();
   }
