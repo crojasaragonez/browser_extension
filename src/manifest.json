@@ -3,7 +3,7 @@
   "description": "Adds useful links for intenal use in Go-Labs company",
   "manifest_version": 2,
   "name": "Go-Labs",
-  "version": "1.2",
+  "version": "1.4",
   "homepage_url": "http://go-labs.net",
   "icons": {
     "48": "icons/icon-48.png"
@@ -20,10 +20,7 @@
   },
 
   "web_accessible_resources": [
-    "images/gitlab.png",
-    "images/yammer.png",
-    "images/quickbooks.png",
-    "images/youtrack.png"
+    "images/*.png"
   ]
 
 }
