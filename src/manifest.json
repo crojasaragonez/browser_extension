@@ -3,7 +3,7 @@
   "description": "Adds useful links for intenal use in Go-Labs company",
   "manifest_version": 2,
   "name": "Go-Labs",
-  "version": "1.1",
+  "version": "1.2",
   "homepage_url": "http://go-labs.net",
   "icons": {
     "48": "icons/icon-48.png"
